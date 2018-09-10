@@ -15,13 +15,13 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  var contents = `In your cart, you have ${cart[0].itemName at cart[0].itemPrice}`
+  var contents = `In your cart, you have ${cart[0].itemName} at ${cart[0].itemPrice}`
   if (cart.length === 0) {
     return 'Your shopping cart is empty.'
   } else if (cart.length === 1) {
     contents = `${contents}.`
   } else if (cart.length === 2) {
-    contents = `${content} and ${cart[1].itemName at cart[1].itemPrice}.`
+    contents = `${content} and ${cart[1].itemName} at ${cart[1].itemPrice}.`
   } else {
   for (let i = 1; i < cart.length; i++) {
     if (i === cart.length - 1) {
